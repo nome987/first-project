@@ -1,0 +1,32 @@
+{
+  "name": "ai-resume-builder-upgraded",
+  "version": "1.0.0",
+  "description": "AI-powered resume and career toolkit with database integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Build completed'",
+    "install-python-deps": "pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.8.0"
+  },
+  "keywords": [
+    "ai",
+    "resume",
+    "career",
+    "gradio",
+    "machine-learning"
+  ],
+  "author": "AI Resume Builder Team",
+  "license": "MIT"
+}
