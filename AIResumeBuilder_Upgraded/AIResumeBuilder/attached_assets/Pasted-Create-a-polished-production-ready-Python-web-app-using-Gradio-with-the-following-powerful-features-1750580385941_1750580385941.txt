@@ -1,0 +1,61 @@
+Create a polished, production-ready Python web app using Gradio with the following powerful features and real-time integrations:
+
+1. **AI Resume Generator (Real-Time)**:
+   - Inputs: name, role, skills, experience, education.
+   - Use Hugging Face Inference API with `Mistral-7B-Instruct-v0.1` for high-quality text generation.
+   - Output a formatted resume and export as PDF using `fpdf`.
+
+2. **AI Cover Letter Generator (Real-Time)**:
+   - Inputs: name, role, company, skills.
+   - Generate tailored cover letter via Hugging Face API.
+   - Export as PDF.
+
+3. **Resume Upload & Analyzer**:
+   - Upload existing PDF resumes using Gradio’s `File` component.
+   - Extract text with `pdfplumber` and `PyMuPDF`.
+   - Analyze for missing sections, improvements, and grammar using `LanguageTool` Python API and LLM.
+   - Provide AI-powered clear suggestions.
+
+4. **ATS Match Score (Real-Time)**:
+   - Input: resume text + job description.
+   - Use Sentence-Transformers `all-MiniLM-L6-v2` to get embeddings.
+   - Calculate cosine similarity → ATS match %.
+
+5. **Job Matcher & Recommendations**:
+   - Load job listings from a CSV.
+   - Use vector similarity (embeddings) to match resume to top 5 job titles.
+   - Show confidence scores.
+
+6. **Resume Perfection Score (Real-Time)**:
+   - AI evaluates structure, formatting, grammar, keyword density.
+   - Use LLM to generate score out of 100 + improvement tips.
+
+7. **LinkedIn Summary Generator**:
+   - Input: resume or profile data.
+   - Generate professional summary via Hugging Face API.
+
+8. **Skill Gap Finder**:
+   - Compare user skills vs required job skills.
+   - List missing skills with suggestions to learn them using public sources/APIs.
+
+9. **Career Insights Dashboard**:
+   - Plot charts (pie, bar) showing strengths vs gaps, ATS match, job fit using `plotly`.
+   - Display summary stats.
+
+10. **AI Career Chatbot**:
+    - Add a Gradio chat interface.
+    - Real-time conversation using Hugging Face chatbot model like `openchat/openchat-3.5-*-instruct`.
+    - Capable of giving suggestions, answering career questions, generating interview Q&A.
+
+11. **Polished UI**:
+    - Use `gr.Blocks()` layout with tabs or accordion sections for each tool.
+    - One-click buttons for each feature.
+    - Download buttons for PDFs.
+    - Clear labels and tooltips.
+
+12. **Environment & API Integration**:
+    - Use Hugging Face API with environment variable `HF_TOKEN`.
+    - Install: `gradio`, `transformers`, `sentence-transformers`, `fpdf`, `pdfplumber`, `pymupdf`, `plotly`, `langtool-python`.
+    - Modular code: separate functions for each feature with comments.
+
+Ensure the app runs smoothly on Replit with real API calls, user-friendly interface, and robust UI flow for a premium experience

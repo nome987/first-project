@@ -1,0 +1,73 @@
+Upgrade the existing Gradio-based AI Resume Builder app into a visually stunning, world-class website that looks and feels like a $100K+ professional SaaS platform. The final design should be smooth, animated, responsive, and feel like a top-tier website from Apple, Stripe, or Linear.
+
+## GENERAL DESIGN GOALS:
+- Ultra-clean interface with elegant spacing and balance
+- Responsive mobile-first layout
+- Subtle motion on every user interaction
+- Gradient overlays, glassmorphism, soft shadows, and premium icons
+- Visual hierarchy and intuitive flow
+
+## VISUAL STYLING:
+1. **Fonts & Typography**
+   - Use Google Fonts: `Poppins` (headers), `Inter` or `DM Sans` (body)
+   - Font smoothing and consistent line height
+   - Heading animations with fade-slide effect
+
+2. **Color Scheme**
+   - Use modern, soothing gradients:
+     - `linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)`
+     - `linear-gradient(to right, #434343, #000000)` (dark mode)
+     - Accent colors: Neon Blue `#00e0ff`, Cyber Purple `#a100ff`, Silver White `#f5f7fa`
+   - Light/Dark mode toggle with animated transition
+
+3. **Button Styling**
+   - 3D glassmorphism buttons with hover glow & click ripple
+   - Smooth transitions using `transition: all 0.4s ease-in-out`
+   - Keyframe animation for call-to-action: pulse or bounce on load
+
+4. **Card & Section Layouts**
+   - Use neumorphism-style cards:
+     - Soft shadows, depth using `box-shadow: 0 10px 30px rgba(0,0,0,0.1)`
+     - Rounded edges, padding, hover elevation
+   - Responsive grid layout for features & dashboard sections
+
+5. **Animations & Transitions**
+   - Use `@keyframes` for fade-in, slide-up, and pulse effects
+   - Entry animation on each section using AOS or custom CSS (IntersectionObserver)
+   - Animate button clicks, form inputs, and file upload feedback
+
+6. **Hero Section**
+   - Full-screen hero with animated gradient background
+   - Welcome message with typing animation or scroll parallax
+   - Floating resume & AI icons in background using Lottie or SVGs
+
+7. **Chatbot Interface**
+   - Modern, rounded chat UI with smooth auto-scroll
+   - Typing indicator animation with dots
+   - Chat message fade-ins with delay for realism
+
+8. **Interactive Effects**
+   - On keypress inside form inputs → subtle highlight animation
+   - On hover over sections → scale up slightly with shadow glow
+   - Click sound or haptic feedback effect (optional)
+
+9. **Download & Success Feedback**
+   - Toast notifications for "Resume Generated", "PDF Downloaded"
+   - Include confetti or particle animation for success events
+
+10. **Advanced CSS Setup**
+   - Embed all styles using `css=` in Gradio blocks
+   - Use embedded `<style>` for custom transitions
+   - Reusable `.btn-primary`, `.card`, `.gradient-bg`, `.input-animated` classes
+   - Include Lottie JSON animation embeds via HTML if needed
+
+## TECHNOLOGIES:
+- Python backend (Gradio)
+- HTML/CSS for frontend design in Gradio `Blocks`
+- Google Fonts CDN
+- Optional: AOS.js or custom Intersection Observer animations
+- Optional: Include `lottie-web` for animated icons or loaders
+
+Make the interface **smooth, professional, futuristic**, and ensure it performs well across devices. Structure the layout to guide users step-by-step through resume building, analysis, job matching, and chatbot. Add hover effects, input animations, and ensure UI/UX flow is intuitive and engaging.
+
+Ensure full compatibility with Replit, including responsive scaling and animated transitions inside `gr.Blocks()` layout.

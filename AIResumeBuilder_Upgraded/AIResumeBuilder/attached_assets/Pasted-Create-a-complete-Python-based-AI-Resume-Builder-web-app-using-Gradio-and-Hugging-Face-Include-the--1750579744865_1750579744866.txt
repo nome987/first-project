@@ -1,0 +1,53 @@
+Create a complete Python-based AI Resume Builder web app using Gradio and Hugging Face. Include the following features:
+
+1. **AI Resume Generator**: 
+   - Input: name, role, skills, experience, education
+   - Use Hugging Face model like `microsoft/phi-1_5` or `mistralai/Mistral-7B-Instruct-v0.1` to generate a professional resume
+   - Convert the output to PDF using `fpdf` or `python-docx`
+
+2. **AI Cover Letter Generator**:
+   - Input: name, role, company, and skills
+   - Generate a tailored cover letter using the same model
+   - Export as a separate PDF
+
+3. **Resume Analyzer**:
+   - Allow users to upload their PDF resume
+   - Extract text using `PyMuPDF` or `pdfplumber`
+   - Analyze missing sections like objective, experience, or skills
+   - Highlight grammar mistakes and give improvement suggestions
+
+4. **ATS Match Score Calculator**:
+   - Input: uploaded resume and a job description
+   - Use sentence embeddings (e.g., `sentence-transformers/all-MiniLM-L6-v2`)
+   - Calculate cosine similarity between resume content and job keywords
+   - Return a percentage match (ATS Score)
+
+5. **Job Matcher**:
+   - Match user skills to a predefined job list in a CSV or database
+   - Use vector similarity or keyword match
+   - Display top 5 matching job titles with confidence scores
+
+6. **Resume Perfection Score**:
+   - AI evaluates structure, formatting, grammar, keyword density
+   - Return a score out of 100 with suggestions to improve
+
+7. **LinkedIn Summary Generator**:
+   - Use profile info or resume data to generate a professional LinkedIn summary
+
+8. **Skill Gap Finder**:
+   - Compare job requirements vs resume skills
+   - List missing skills and how to acquire them
+
+9. **Career Insights Dashboard**:
+   - Show pie chart of strengths vs gaps using `matplotlib` or `plotly`
+   - Summary of job-fit %, ATS score, and skill rating
+
+10. **User Interface**:
+    - Use `gr.Blocks()` layout
+    - Include sections for each feature with buttons and clear labels
+    - Return downloadable files where applicable
+
+Install necessary packages:
+- `gradio`, `transformers`, `sentence-transformers`, `fpdf`, `pdfplumber`, `PyMuPDF`, `matplotlib`
+
+Make the entire app beginner-friendly, and ensure each function is modular and commented clearly.
